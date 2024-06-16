@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    background: rgb(125, 188, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.5rem;
+}
+.container{
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
+    border-radius: 2rem;
+}
+h3{
+    font: 500 3rem arial;
+    color: #222;
+    padding: 0 0 0.6em 0;
+    text-align: center;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.choice{
+    max-width: 90px;
+    width: 100%;
+    height: 90px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.choice:hover{
+    transform: scale(1.1);
+}
+img{
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.msg{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5rem auto;
+    background-color: #111;
+    border-radius: 5px;
+    padding: 0.3em 0.6em;
+    width: max-content;
+    color: #fff;
+}
+.score-board{
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    text-align: center;
+}
+.score span{
+    font-size: 2rem;
+}
+.score-board h6{
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 0.4em 0 0 0;
+}
+button{
+    font-size: 1.8rem;
+    border: none;
+    padding: 0.4em 0.8em;
+    background: #000;
+    color: #fff;
+    border-radius: 1rem;
+    margin: 2rem auto 0;
+    cursor: pointer;
+    display: none;
+}
+button:hover{
+    background: #222;
+}
